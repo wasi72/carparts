@@ -1,0 +1,135 @@
+.best-sellers-section {
+  width: 100%; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.best-sellers-section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.best-sellers-tabs {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.tab-item {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tab-item img.category-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+.tab-item span {
+  display: block;
+}
+
+.tab-item.active span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.tab-item.active img.category-icon {
+  border: 2px solid #007bff;
+  border-radius: 50%;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.best-sellers-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px; 
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 250px; 
+}
+
+.best-sellers-card img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.sale-tag {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: #999;
+}
+
+.compare-button {
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .best-sellers-tabs {
+    flex-wrap: wrap; 
+  }
+
+  .tab-item {
+    flex: 1 1 30%; 
+    min-width: 100px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .best-sellers-section h2 {
+    font-size: 20px;
+  }
+
+  .tab-item {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+}

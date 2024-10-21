@@ -1,0 +1,126 @@
+.aboutus-section {
+    position: relative;
+    background: url('../imgs/about-page-hero.webp') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.aboutus-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.aboutus-share-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.aboutus-close-icon {
+    background: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-social-icon {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.aboutus-share-text {
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 12px;
+}
+
+.aboutus-content {
+    z-index: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.aboutus-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.aboutus-content h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.aboutus-content p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .aboutus-section {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 28px;
+    }
+
+    .aboutus-content p {
+        font-size: 14px;
+    }
+
+    .aboutus-share-icons {
+        top: 10px;
+        left: 10px;
+    }
+
+    .aboutus-social-icon {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-section {
+        height: 250px;
+        padding: 5px;
+    }
+
+    .aboutus-content h1 {
+        font-size: 24px;
+    }
+
+    .aboutus-content p {
+        font-size: 12px;
+    }
+
+    .aboutus-social-icon {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,90 @@
+.vision-approach-section {
+    padding: 50px 20px;
+    background-color: #f7f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-approach-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+}
+
+.vision-card,
+.approach-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.vision-card {
+    background-image: url('../../imgs/about-services-1.webp'); 
+}
+
+.vision-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+}
+
+.vision-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.vision-description {
+    font-size: 1rem;
+}
+
+.approach-card {
+    background-image: url('../../imgs/about-services-2.webp'); 
+}
+
+.approach-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+}
+
+.approach-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.approach-description {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .vision-approach-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .vision-title, .approach-title {
+        font-size: 2rem;
+    }
+
+    .vision-description, .approach-description {
+        font-size: 1.125rem;
+    }
+}

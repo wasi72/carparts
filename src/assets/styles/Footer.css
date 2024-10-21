@@ -1,0 +1,123 @@
+.footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-title {
+    color: #e67e22;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .column-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #e67e22;
+  }
+  
+  .column-item {
+    color: #ccc;
+    margin-bottom: 0.25rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .column-item:hover {
+    color: #e67e22;
+  }
+  
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .newsletter-textfield {
+    background-color: #fff;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+  }
+  
+  .newsletter-button {
+    background-color: #e67e22;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    color: #fff;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-cards img {
+    width: 50px;
+    margin: 0.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 1rem;
+    }
+  
+    .newsletter-textfield {
+      width: 150px;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+    }
+  }
+  

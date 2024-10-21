@@ -1,0 +1,22 @@
+.scrolling-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f9f9f9; 
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 6rem; 
+    color: #ff5722; 
+    animation: scrollText 60s linear infinite; 
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

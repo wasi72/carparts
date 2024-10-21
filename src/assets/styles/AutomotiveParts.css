@@ -1,0 +1,85 @@
+.automotive-parts-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f5f0;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.category {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.category.active {
+  color: #ff5733;
+  border-bottom: 2px solid #ff5733;
+}
+
+.parts-grid {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.part-card {
+  width: 30%; 
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.part-card:hover {
+  transform: translateY(-5px);
+}
+
+.part-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.part-card p {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .part-card {
+    width: 45%; 
+  }
+
+  .category {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .part-card {
+    width: 80%; 
+  }
+
+  .category {
+    font-size: 12px;
+  }
+
+  .part-card img {
+    height: 150px;
+  }
+}

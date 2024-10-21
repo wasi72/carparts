@@ -1,0 +1,130 @@
+.unique-product-comparison-container {
+    text-align: center; 
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.unique-product-comparison-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.unique-product-comparison-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.unique-comparison-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%; 
+    margin: 0 auto;
+}
+
+.unique-product-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.unique-product-info {
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+}
+
+.unique-product-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.unique-product-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.unique-product-info .unique-price {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.unique-product-info table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+
+.unique-product-info td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.unique-product-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.unique-product-buttons .unique-view-product {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    width: auto; 
+}
+
+.unique-product-buttons .unique-view-product:hover {
+    background-color: #e64a19;
+}
+
+@media (max-width: 1024px) {
+    .unique-product-items {
+        flex-direction: column;
+    }
+
+    .unique-product-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .unique-product-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-comparison-card {
+        padding: 15px;
+    }
+
+    .unique-product-info {
+        padding: 10px;
+    }
+
+    .unique-product-info table {
+        font-size: 14px;
+    }
+
+    .unique-product-buttons .unique-view-product {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}

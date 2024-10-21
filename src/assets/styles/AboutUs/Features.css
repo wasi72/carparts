@@ -1,0 +1,80 @@
+.feature-cards-section {
+    background-color: #f7f5f0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-cards-container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Feature card item styles */
+  .feature-card-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon styles */
+  .feature-card-icon {
+    color: #0033cc;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  
+  /* Title styles */
+  .feature-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Description styles */
+  .feature-card-description {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Responsive styles for larger screens */
+  @media (min-width: 768px) {
+    .feature-cards-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .feature-cards-container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+  
+    .feature-card-title {
+      font-size: 1.75rem;
+    }
+  
+    .feature-card-description {
+      font-size: 1.125rem;
+    }
+  }
+  
