@@ -10,7 +10,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/carparts">
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="home" element={<HomePage />} />
